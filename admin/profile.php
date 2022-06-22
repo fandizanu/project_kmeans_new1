@@ -32,7 +32,7 @@
 			<div class="card-body">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="profile-view">
+						<!-- <div class="profile-view">
 							<div class="profile-img-wrap">
 								<div class="profile-img">
 									<a href="#"><img alt="" src="../gambar/admin/<?php echo $d['admin_foto'] ?>"></a>
@@ -67,7 +67,7 @@
 										</ul>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="pro-edit"><a data-target="#adminEdit<?php echo $d['admin_id']; ?>" data-toggle="modal" class="edit-icon" href="#"><i class="fa fa-pencil"></i></a></div>
 
 							<div id="adminEdit<?php echo $d['admin_id']; ?>" class="modal custom-modal fade" role="dialog">

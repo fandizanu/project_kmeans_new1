@@ -28,7 +28,7 @@
 					<div class="card-header">
 						<h4 class="card-title mb-0">Data Atribut</h4>
 						<br>						
-						<a href="tanaman_pdf.php" target="_blank" class="btn btn-sm btn-success"><i class="fa fa-print"></i> PDF</a>
+						<a href="banjir_pdf.php" target="_blank" class="btn btn-sm btn-success"><i class="fa fa-print"></i> PDF</a>
 					</div>
 					<div class="card-body">
 
@@ -53,8 +53,8 @@
 											<td>
 												<a class="btn btn-sm btn-warning" href="#" data-toggle="modal" data-target="#edittanaman<?php echo $d['tanaman_id']; ?>"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 												<a class="btn btn-sm btn-success" href="#" data-toggle="modal" data-target="#setTanaman<?php echo $d['tanaman_id']; ?>"> Setting</a>
-												<a class="btn btn-sm btn-primary" href="tanaman_nilai.php?id=<?= $d['tanaman_id'] ?>"> Nilai</a>
-												<a href="tanaman_hapus.php?id=<?= $d['tanaman_id'] ?>" class="btn btn-sm btn-danger"> Hapus </a>
+												<a class="btn btn-sm btn-primary" href="banjir_nilai.php?id=<?= $d['tanaman_id'] ?>"> Nilai</a>
+												<a href="banjir_hapus.php?id=<?= $d['tanaman_id'] ?>" class="btn btn-sm btn-danger"> Hapus </a>
 
 
 
@@ -70,7 +70,7 @@
 															</div>
 															<div class="modal-body">
 																<!-- form -->
-																<form method="post" action="tanaman_setting.php">
+																<form method="post" action="banjir_setting.php">
 																	<div class="row">
 																		<div class="col-md-12">
 																			<div class="form-group">
@@ -132,7 +132,7 @@
 															</div>
 															<div class="modal-body">
 																<!-- form -->
-																<form method="post" action="tanaman_update.php">
+																<form method="post" action="banjir_update.php">
 																	<div class="row">
 																		<div class="col-md-12">
 																			<div class="form-group">
@@ -179,18 +179,18 @@
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Tambah Data Tanaman</h5>
+					<h5 class="modal-title">Tambah Data </h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
-					<form method="post" action="tanaman_act.php">
+					<form method="post" action="banjir_act.php">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
-									<label>Nama Tanaman</label>
-									<input type="text" name="nama" class="form-control" required="required" placeholder="Nama tanaman">
+									<label>Nama </label>
+									<input type="text" name="nama" class="form-control" required="required" placeholder="Nama">
 								</div>
 							</div>							
 							

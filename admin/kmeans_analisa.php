@@ -39,9 +39,9 @@
 												<label>Kecamatan</label>
 												<input type="hidden" name="tanaman" value="<?php echo $_GET['id'] ?>">
 												<select class="form-control pilih-desa1" name="centroid1" required="required">
-													<option value="">Pilih Kecamatan</option>
+													
 													<?php
-													$data = mysqli_query($koneksi,"select * from kecamatan");		
+													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 2 ");		
 													while($d=mysqli_fetch_array($data)){
 														?>
 														<option value="<?php echo $d['kecamatan_id'] ?>"><?php echo $d['kecamatan_nama'] ?></option>
@@ -57,9 +57,9 @@
 											<td width="15%">
 												<label>Kecamatan</label>
 												<select class="form-control pilih-desa2" name="centroid2" required="required">
-													<option value="">Pilih kecamatan</option>
+													
 													<?php
-													$data = mysqli_query($koneksi,"select * from kecamatan");		
+													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 20");		
 													while($d=mysqli_fetch_array($data)){
 														?>
 														<option value="<?php echo $d['kecamatan_id'] ?>"><?php echo $d['kecamatan_nama'] ?></option>
@@ -76,9 +76,9 @@
 											<td width="15%">
 												<label>kecamatan</label>
 												<select class="form-control pilih-desa3" name="centroid3" required="required">
-													<option value="">Pilih kecamatan</option>
+													
 													<?php
-													$data = mysqli_query($koneksi,"select * from kecamatan");		
+													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id=19");		
 													while($d=mysqli_fetch_array($data)){
 														?>
 														<option value="<?php echo $d['kecamatan_id'] ?>"><?php echo $d['kecamatan_nama'] ?></option>

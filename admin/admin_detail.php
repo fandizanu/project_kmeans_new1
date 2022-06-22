@@ -33,11 +33,11 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="profile-view">
-							<div class="profile-img-wrap">
+							<!-- <div class="profile-img-wrap">
 								<div class="profile-img">
 									<a href="#"><img alt="" src="../gambar/admin/<?php echo $d['admin_foto'] ?>"></a>
 								</div>
-							</div>
+							</div> -->
 							<div class="profile-basic">
 								<div class="row">
 									<div class="col-md-5">

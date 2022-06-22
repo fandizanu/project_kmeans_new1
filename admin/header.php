@@ -69,7 +69,7 @@
 							<span>Admin</span>
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="profile.php">My Profile</a>							
+							<!-- <a class="dropdown-item" href="profile.php">My Profile</a>							 -->
 							<a class="dropdown-item" href="logout.php">Logout</a>
 						</div>
 					</li>
@@ -80,7 +80,7 @@
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="profile.php">My Profile</a>							
+						<!-- <a class="dropdown-item" href="profile.php">My Profile</a>							 -->
 						<a class="dropdown-item" href="logout.php">Logout</a>
 					</div>
 				</div>
@@ -111,7 +111,7 @@
 								<a href="#"><i class="la la-cube"></i> <span> Data Master </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a href="kecamatan.php"> Kecamatan </a></li>
-									<li><a href="tanaman.php"> Nilai Atribut </a></li>
+									<li><a href="banjir.php"> Nilai Atribut </a></li>
 									<li><a href="kriteria.php"> Atribut </a></li>
 								</ul>
 							</li>

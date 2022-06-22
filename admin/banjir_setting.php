@@ -9,4 +9,4 @@ for($i=0; $i<count($kriteria); $i++){
 	mysqli_query($koneksi,"insert into tanaman_kriteria values(NULL,'$tanaman','$kriteria[$i]')");
 
 }
-header("location:tanaman.php?alert=setting");
+header("location:banjir.php?alert=setting");

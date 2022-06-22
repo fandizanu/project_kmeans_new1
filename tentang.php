@@ -38,7 +38,7 @@
 	<div class="menu" style=" padding:50px 100px ">
 		<div class="content" style="background-color: #ddffff; ">
 			<div class="main" style="font-family: 'Montserrat', sans-serif;">
-			<h1 style="font-family: 'Montserrat', sans-serif; font-weight:bold; padding-left:10px;text-align:center; border-bottom:solid 2px black; ">TENTANG </h1>
+			<h1 style="font-family: 'Montserrat', sans-serif; font-weight:bold; padding-left:10px;text-align:center; border:solid 2px black; border-radius:10px; ">TENTANG </h1>
 			
 				<div class="foto">
 				<p>

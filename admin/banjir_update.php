@@ -9,6 +9,7 @@ if($_SESSION['status'] != "Admin"){
 
  
 include '../koneksi.php';
+$id = $_POST['id'];
 $nama = $_POST['nama'];
-mysqli_query($koneksi,"insert into tanaman values (NULL, '$nama')");
-header("location:tanaman.php?alert=tambah");
+mysqli_query($koneksi,"update tanaman set tanaman_nama='$nama' where tanaman_id='$id'");
+header("location:banjir.php?alert=edit");

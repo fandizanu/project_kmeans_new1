@@ -17,7 +17,7 @@
 					</ul>
 				</div>
 				<div class="col-auto float-right ml-auto">
-					<a href="tanaman.php" class="btn add-btn"><i class="fa fa-minus"></i> Kembali</a>
+					<a href="banjir.php" class="btn add-btn"><i class="fa fa-minus"></i> Kembali</a>
 				</div>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 						$data = mysqli_query($koneksi,"select * from tanaman where tanaman_id='$id'");
 						$d = mysqli_fetch_assoc($data);
 						?>						
-						<form method="post" action="tanaman_nilai_act.php">
+						<form method="post" action="banjir_nilai_act.php">
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
