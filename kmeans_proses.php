@@ -8,7 +8,7 @@ $tanaman = $_GET['tanaman'];
 ?>
 
 
-<div class="page-wrapper" style="padding-top:3%; background-color:#ddffff">
+<div class="page-wrapper" style="padding-top:3%; background-color:#ddffff ;display:none;">
 
 	<!-- Page Content -->
 	<div class="content container-fluid">
@@ -1028,7 +1028,7 @@ $tanaman = $_GET['tanaman'];
 
 	</div>
 </div>
-<div class="hasil" style="padding-bottom:3%; padding-left:30px;padding-right:30px">
+<div class="hasil" style="padding-bottom:3%; padding-left:30px;padding-right:30px ;padding-top:2rem;">
 <h4 class="text-center">HASIL AKHIR (DIURUTKAN)</h4>
 						<div class="table-responsive">
 							<table class="table table-bordered text-center" border="1">
@@ -1049,7 +1049,7 @@ $tanaman = $_GET['tanaman'];
 							</table>
 </div>
 
-	</div>  
+</div>  
 
 
 <!-- /Page Wrapper -->

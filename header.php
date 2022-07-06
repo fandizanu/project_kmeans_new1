@@ -22,8 +22,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pacifico&display=swap" rel="stylesheet">
-	
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script	script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 	<!-- YOUR CUSTOM CSS -->
 	<link href="assets_front/css/custom.css" rel="stylesheet">
@@ -53,33 +54,38 @@
 
 <body>
 	<?php include 'koneksi.php'; ?>
-	<!-- <div id="preloader" class="Fixed">
-		<div data-loader="circle-side"></div>
-	</div> -->
-	<!-- /Preload-->
-	
-	<nav style="background-image: url('assets/img/bg.jpg')">
-				<div class="logo">
-					<a href="index.php"><img src="assets/img/smd.png" style="height: 48px; width:48px;"> Sistem Informasi Geografis Samarinda </a>
-				</div>
-
-				<ul style="padding-top: 10px;">
-					<li><span><a href="index.php">Home</a></span></li>					
-					<li><span><a href="peta_kabupaten.php">Peta Kota Samarinda</a></span></li>
-					<li><span><a href="kmeans.php">Transformasi Data</a></span></li>					
-					<li><span><a href="atribut.php">Atribut</a></span></li>
-					<li><span><a href="tentang.php">Tentang</a></span></li>
-					<li><span><a href="login.php">Login</a></span></li>
-				</ul>
-
-				<div class="menu-toggle">
-					<input type="checkbox" >
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-		</nav>
-		<script src="script.js"></script>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #03e3fc; background: -moz-linear-gradient(left, #03e3fc 0%, #6703fc 100%); background: -webkit-linear-gradient(left, #03e3fc 0%, #6703fc 100%);
+  background: -ms-linear-gradient(left, #03e3fc 0%, #6703fc 100%);  background: linear-gradient(to right, #03e3fc 0%, #6703fc 100%);" >
+	<div class="container" style="font-size:larger;">
+		<a class="navbar-brand" href="index.php" style="font-family: 'Pacifico', cursive; color:#0320fc">Sistem Informasi Geografis Samarinda</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav ms-auto " >
+			<li class="nav-item">
+				<a class="nav-link" href="index.php">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="peta_kecamatan.php">Peta</a>
+			</li>
+			<!-- <li class="nav-item">
+				<a class="nav-link" href="kmeans.php">Transformasi</a>
+			</li> -->
+			<li class="nav-item">
+				<a class="nav-link" href="atribut.php">Atribut</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="tentang.php">Tentang</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="login.php">Login</a>
+			</li>
+			
+		</ul>
+		</div>
+	</div>
+	</nav>
 </body>
 		<!-- /header -->
 		<style type="text/css">

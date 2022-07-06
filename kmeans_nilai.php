@@ -4,7 +4,7 @@ $tanaman = $_GET['id'];
 ?>
 
 
-<div class="page-wrapper" style="padding:3% 0; background-color: #ddffff; ">
+<div class="page-wrapper" style="padding:3% 0;  ">
 
 	<!-- Page Content -->
 	<div class="content container-fluid">

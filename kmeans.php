@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <!-- Page Wrapper -->
-<div class="menu" style=" background-color:#ddffff;  ">
+<div class="menu" >
 <div class="page-wrapper" style="padding:50px 100px">
 
 <!-- Page Content -->
@@ -12,10 +12,7 @@
 		<div class="row align-items-center">
 			<div class="col">
 				<h3 class="page-title">Transformasi Data </h3>
-				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-					<li class="breadcrumb-item active">Transformasi Data </li>
-				</ul>
+				
 			</div>				
 		</div>
 	</div>

@@ -14,8 +14,13 @@
 
    
 </style>
-<footer class="w3-center w3-padding-16" style="background-image: url('gambar/bg.jpg'); ">
-  <p style="font-size:18px;font-weight:bold;"> Copyright &copy; Zanu Alfandi | <?php echo date('Y'); ?> </p>
+<footer class="w3-center w3-padding-16" style=" 
+background: #03e3fc;
+background: -moz-linear-gradient(right, #03e3fc 0%, #6703fc 100%); 
+background: -webkit-linear-gradient(right, #03e3fc 0%, #6703fc 100%);
+background: -ms-linear-gradient(right, #03e3fc 0%, #6703fc 100%); 
+background: linear-gradient(to left, #03e3fc 0%, #6703fc 100%); ">
+  <p style="font-size:18px;font-weight:bold; color:white;"> Copyright &copy; Zanu Alfandi | <?php echo date('Y'); ?> </p>
 
 <div class=”wrapper”>
     <span class="lingkaran" ><a href="https://wa.wizard.id/a23c84"><img src="assets/img/wa.png" alt="" style="height: 30px;width:30px"> </a></span>

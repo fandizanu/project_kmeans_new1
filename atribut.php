@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu" style="padding:50px 100px; background-color:#ddffff;">
+    <div class="menu" style="padding:50px 100px; ">
     <div class="row" >
 			<div class="col-sm-12" >
 				<div class="card mb-0">

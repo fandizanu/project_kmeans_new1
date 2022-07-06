@@ -10,10 +10,10 @@
 		<div class="page-header">
 			<div class="row align-items-center">
 				<div class="col">
-					<h3 class="page-title">Data Atribut</h3>
+					<h3 class="page-title">Kategori</h3>
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-						<li class="breadcrumb-item active">Data Atribut</li>
+						<li class="breadcrumb-item active">Data Kategori</li>
 					</ul>
 				</div>
 				<div class="col-auto float-right ml-auto">
@@ -26,7 +26,7 @@
 			<div class="col-sm-12">
 				<div class="card mb-0">
 					<div class="card-header">
-						<h4 class="card-title mb-0">Data Atribut</h4>
+						<h4 class="card-title mb-0">Data Kategori</h4>
 						<br>						
 						<a href="banjir_pdf.php" target="_blank" class="btn btn-sm btn-success"><i class="fa fa-print"></i> PDF</a>
 					</div>

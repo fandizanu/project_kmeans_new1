@@ -41,7 +41,7 @@
 												<select class="form-control pilih-desa1" name="centroid1" required="required">
 													
 													<?php
-													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 2 ");		
+													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 21 ");		
 													while($d=mysqli_fetch_array($data)){
 														?>
 														<option value="<?php echo $d['kecamatan_id'] ?>"><?php echo $d['kecamatan_nama'] ?></option>
@@ -59,7 +59,7 @@
 												<select class="form-control pilih-desa2" name="centroid2" required="required">
 													
 													<?php
-													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 20");		
+													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 23 ");		
 													while($d=mysqli_fetch_array($data)){
 														?>
 														<option value="<?php echo $d['kecamatan_id'] ?>"><?php echo $d['kecamatan_nama'] ?></option>
@@ -78,7 +78,7 @@
 												<select class="form-control pilih-desa3" name="centroid3" required="required">
 													
 													<?php
-													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id=19");		
+													$data = mysqli_query($koneksi,"select * from kecamatan where kecamatan_id = 25");		
 													while($d=mysqli_fetch_array($data)){
 														?>
 														<option value="<?php echo $d['kecamatan_id'] ?>"><?php echo $d['kecamatan_nama'] ?></option>
