@@ -54,7 +54,7 @@
 				<!-- <img src="gambar/banjir.jpg" class="card-img-top" alt="..." > -->
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Utara</h5>
-					<p class="card-text">Samarinda Utara termasuk ke dalam kelompok <br> <b>Banjir Tinggi</b> </p>
+					<p class="card-text">Samarinda Utara termasuk ke dalam kelompok <br> <b>Banjir Sering</b> </p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -66,7 +66,7 @@
 				<!-- <img src="gambar/pinang.jpg" class="card-img-top" alt="..." style="width: 408px;height:200px;" > -->
 				<div class="card-body">
 					<h5 class="card-title">Sungai Pinang</h5>
-					<p class="card-text">Sungai Pinang termasuk ke dalam kelompok <br> <b>Banjir Tinggi</b> </p>
+					<p class="card-text">Sungai Pinang termasuk ke dalam kelompok <br> <b>Banjir Sering</b> </p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -80,7 +80,7 @@
 				<!-- <img src="gambar/kota1.jpg" class="card-img-top" alt="..." > -->
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Kota</h5>
-					<p class="card-text">Samarinda Kota termasuk ke dalam kelompok <br> <b>Banjir Rendah</b></p>
+					<p class="card-text">Samarinda Kota termasuk ke dalam kelompok <br> <b>Banjir Jarang</b></p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -107,7 +107,7 @@
 				<!-- <img src="gambar/ulu.jpg" class="card-img-top" alt="..." style="width: 408px;height:200px;" > -->
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Ulu</h5>
-					<p class="card-text">Samarinda Ulu termasuk ke dalam kelompok <br> <b>Banjir Tinggi</b></p>
+					<p class="card-text">Samarinda Ulu termasuk ke dalam kelompok <br> <b>Banjir Sering</b></p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -120,7 +120,7 @@
 				<!-- <img src="gambar/noimage.png" class="card-img-top" alt="..." style="width: 408px;height:200px;"> -->
 				<div class="card-body">
 					<h5 class="card-title">Sambutan</h5>
-					<p class="card-text">Sambutan termasuk ke dalam kelompok <br><b>Banjir Rendah</b></p>
+					<p class="card-text">Sambutan termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -134,7 +134,7 @@
 				<!-- <img src="gambar/noimage.png" class="card-img-top" alt="..." style="width: 408px;height:200px;"> -->
 				<div class="card-body">
 					<h5 class="card-title">Sungai Kunjang</h5>
-					<p class="card-text">Sungai Kunjang termasuk ke dalam kelompok <br><b>Banjir Rendah</b></p>
+					<p class="card-text">Sungai Kunjang termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -147,7 +147,7 @@
 				<!-- <img src="gambar/noimage.png" class="card-img-top" alt="..." style="width: 408px;height:200px;"> -->
 				<div class="card-body">
 					<h5 class="card-title">Palaran</h5>
-					<p class="card-text">Palaran termasuk ke dalam kelompok <br><b>Banjir Rendah</b></p>
+					<p class="card-text">Palaran termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -161,7 +161,7 @@
 				<!-- <img src="gambar/noimage.png" class="card-img-top" alt="..."  style="width: 400px;height:200px;"> -->
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Seberang</h5>
-					<p class="card-text">Samarinda Seberang termasuk ke dalam kelompok <br><b>Banjir Rendah</b></p>
+					<p class="card-text">Samarinda Seberang termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
 					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 				</div>
 				</div>
@@ -174,7 +174,7 @@
 					<!-- <img src="gambar/noimage.png" class="card-img-top" alt="..." style="width: 408px;height:200px;"> -->
 					<div class="card-body">
 						<h5 class="card-title">Loajanan Ilir</h5>
-						<p class="card-text">Loajanan Ilir termasuk ke dalam kelompok <br><b>Banjir Rendah</b></p>
+						<p class="card-text">Loajanan Ilir termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
 						<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
 					</div>
 					</div>

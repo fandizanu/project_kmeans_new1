@@ -22,10 +22,15 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pacifico&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
 	<script	script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+	-
 	<!-- YOUR CUSTOM CSS -->
 	<link href="assets_front/css/custom.css" rel="stylesheet">
 
@@ -53,6 +58,7 @@
 </style>
 
 <body>
+	
 	<?php include 'koneksi.php'; ?>
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: #03e3fc; background: -moz-linear-gradient(left, #03e3fc 0%, #6703fc 100%); background: -webkit-linear-gradient(left, #03e3fc 0%, #6703fc 100%);
   background: -ms-linear-gradient(left, #03e3fc 0%, #6703fc 100%);  background: linear-gradient(to right, #03e3fc 0%, #6703fc 100%);" >
@@ -67,7 +73,7 @@
 				<a class="nav-link" href="index.php">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="peta_kecamatan.php">Peta</a>
+				<a class="nav-link" href="peta_kecamatan.php">Peta Kecamatan</a>
 			</li>
 			<!-- <li class="nav-item">
 				<a class="nav-link" href="kmeans.php">Transformasi</a>

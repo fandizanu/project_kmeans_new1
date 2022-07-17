@@ -10,7 +10,7 @@
 	<link href="assets/css/about.css" rel="stylesheet">
 </head>
 <body>
-<section class="text-center my-5" id="about">
+<section class="text-center py-5" id="about">
 	<header class="masthead bg-light text-black text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
@@ -39,8 +39,8 @@
 			</div>
         </header>
 	</section> 
-	<section class="text-center" id="skills">
-		<h2   style="margin:40px 0">Skills</h2>
+	<section class="text-center bg-info py-5" id="skills">
+		<h2 style="margin:40px; border-bottom:3px solid black;	">Skills</h2>
 		<div class="container">
 			<div class="row" style="margin: 20px 0;">
 				<div class="col-md-4">
@@ -70,9 +70,9 @@
 			</div>
 		</div>
     </section>
-	<section class="text-center" id="sosmed">
-		<h2 style="margin:40px 0">Find Me On </h2>
-		<img src="gambar/arrow.png" alt="arrow">
+	<section class="text-center py-5" id="sosmed">
+		<h2 style="margin:40px 0;">Find Me On </h2>
+		<img class="img-fluid" src="gambar/arrow.png" alt="arrow">
 	</section>
 
 </body>
