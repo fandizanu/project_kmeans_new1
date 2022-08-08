@@ -10,7 +10,7 @@
 	<link href="assets/css/about.css" rel="stylesheet">
 </head>
 <body>
-<section class="text-center py-5" id="about">
+<section class="text-center mt-5 py-5" id="about">
 	<header class="masthead bg-light text-black text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->

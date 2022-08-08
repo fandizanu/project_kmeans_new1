@@ -37,7 +37,7 @@
 					
 				</div>
 				<div class="col-lg-6 text-center text-lg-start">
-					<img class="img-fluid rounded animated zoomIn " src="gambar/Peta-Samarinda.png" alt="peta">
+					<img class="img-fluid rounded animated zoomIn " src="gambar/PetaHome.png" alt="peta">
 				</div>
 			</div>
 		</div>
@@ -55,7 +55,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Utara</h5>
 					<p class="card-text">Samarinda Utara termasuk ke dalam kelompok <br> <b>Banjir Sering</b> </p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=19; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -66,8 +66,8 @@
 				<!-- <img src="gambar/pinang.jpg" class="card-img-top" alt="..." style="width: 408px;height:200px;" > -->
 				<div class="card-body">
 					<h5 class="card-title">Sungai Pinang</h5>
-					<p class="card-text">Sungai Pinang termasuk ke dalam kelompok <br> <b>Banjir Sering</b> </p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<p class="card-text">Sungai Pinang termasuk ke dalam kelompok <br> <b>Banjir Jarang</b> </p>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=29; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Kota</h5>
 					<p class="card-text">Samarinda Kota termasuk ke dalam kelompok <br> <b>Banjir Jarang</b></p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=30; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>		
@@ -94,7 +94,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Ilir</h5>
 					<p class="card-text">Samarinda Ilir termasuk ke dalam kelompok <br> <b>Banjir Sedang</b> </p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=31; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -108,7 +108,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Ulu</h5>
 					<p class="card-text">Samarinda Ulu termasuk ke dalam kelompok <br> <b>Banjir Sering</b></p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=32; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -121,7 +121,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Sambutan</h5>
 					<p class="card-text">Sambutan termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=33; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -135,7 +135,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Sungai Kunjang</h5>
 					<p class="card-text">Sungai Kunjang termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=34; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -148,7 +148,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Palaran</h5>
 					<p class="card-text">Palaran termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=36; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -161,8 +161,8 @@
 				<!-- <img src="gambar/noimage.png" class="card-img-top" alt="..."  style="width: 400px;height:200px;"> -->
 				<div class="card-body">
 					<h5 class="card-title">Samarinda Seberang</h5>
-					<p class="card-text">Samarinda Seberang termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
-					<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+					<p class="card-text">Samarinda Seberang termasuk ke dalam kelompok <br><b>Banjir Sedang</b></p>
+					<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=21; ?>">Lihat lokasi</a>
 				</div>
 				</div>
 			</div>
@@ -175,7 +175,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Loajanan Ilir</h5>
 						<p class="card-text">Loajanan Ilir termasuk ke dalam kelompok <br><b>Banjir Jarang</b></p>
-						<a href="peta_kecamatan.php" class="btn btn-primary">Lihat Peta</a>
+						<a class="btn btn-primary" href="peta_kecamatan.php?<?php if(isset($_GET['cari'])){echo "cari=".$_GET['cari']."&";} ?>id=35; ?>">Lihat lokasi</a>
 					</div>
 					</div>
 				</div>
@@ -242,6 +242,7 @@
 	</div>
 
 </section>
+
 
 	
 </body>

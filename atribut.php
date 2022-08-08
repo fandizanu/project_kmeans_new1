@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu" style="padding:50px 100px; ">
-    <div class="row" >
+    <div class="menu" style="padding:50px 100px;  ">
+    <div class="row mt-5 pt-5" >
 			<div class="col-sm-12" >
 				<div class="card mb-0">
 					<div class="card-header">

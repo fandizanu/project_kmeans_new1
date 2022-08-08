@@ -161,7 +161,7 @@
 								<div class="form-group">
 									<label>Longtitude</label>
 									<input type="text" name="longitude" class="form-control" required="required" placeholder="Longtitude Kecamatan">
-								</div>
+								</div>								
 								<div class="form-group">
 									<a href="https://www.latlong.net/" target="_blank">KLIK DI SINI UNTUK MENEMUKAN LATITUDE DAN LONGTITUDE MUSTAHIK</a>
 								</div> 

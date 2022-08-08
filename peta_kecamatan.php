@@ -382,6 +382,7 @@
         }
 
         while($p=mysqli_fetch_array($kecamatan)){
+          
           ?>
 
           <div class="strip_list" style="padding: 20px 15px 15px 15px">
@@ -401,7 +402,7 @@
                 <small>Kecamatan</small>
                 <h3><?php echo $p['kecamatan_nama']; ?></h3>
                 <p><?php echo $p['kecamatan_alamat']; ?></p>
-              
+                
               </div>
             </div>
             <ul>

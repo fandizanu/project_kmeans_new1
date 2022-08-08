@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="shortcut icon" href="assets/img/earth.ico" type="image/x-icon">
 
 </head>
 <style>

@@ -88,7 +88,7 @@ $tanaman = $_GET['tanaman'];
 										$id_a = $d['kecamatan_id'];
 										?>
 										<tr class="<?php if($cen1 == $id_a){ echo "bg-warning"; } ?> <?php if($cen2 == $id_a){ echo "bg-success"; } ?> <?php if($cen3 == $id_a){ echo "bg-info"; } ?>">
-											<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (C1)"; } ?> <?php if($cen2 == $id_a){ echo " (C2)"; } ?> <?php if($cen3 == $id_a){ echo "  (C3)"; } ?></td>
+											<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (BanjirJarang)"; } ?> <?php if($cen2 == $id_a){ echo " (BanjirSedang)"; } ?> <?php if($cen3 == $id_a){ echo "  (BanjirSering)"; } ?></td>
 											<?php 
 											$arr_nilai = array();
 											$kriteria = mysqli_query($koneksi,"select * from tanaman_kriteria, kriteria where tk_tanaman='$tanaman' and tk_kriteria=kriteria_id");		
@@ -144,7 +144,7 @@ $tanaman = $_GET['tanaman'];
 										$id_a = $d['kecamatan_id'];
 										?>
 										<tr class="<?php if($cen1 == $id_a){ echo "bg-warning"; } ?> <?php if($cen2 == $id_a){ echo "bg-success"; } ?> <?php if($cen3 == $id_a){ echo "bg-info"; } ?>">
-											<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (C1)"; } ?> <?php if($cen2 == $id_a){ echo " (C2)"; } ?> <?php if($cen3 == $id_a){ echo "  (C3)"; } ?></td>
+											<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (BanjirJarang)"; } ?> <?php if($cen2 == $id_a){ echo " (BanjirSedang)"; } ?> <?php if($cen3 == $id_a){ echo "  (BanjirSering)"; } ?></td>
 											<?php 
 											$kriteria = mysqli_query($koneksi,"select * from tanaman_kriteria, kriteria where tk_tanaman='$tanaman' and tk_kriteria=kriteria_id");		
 											while($k=mysqli_fetch_array($kriteria)){
@@ -176,9 +176,9 @@ $tanaman = $_GET['tanaman'];
 						<div class="table-responsive">
 							<table class="table table-bordered text-center" border="1">
 								<tr>
-									<th>C1</th>
-									<th>C2</th>
-									<th>C3</th>
+									<th>BanjirJarang</th>
+									<th>BanjirSedang</th>
+									<th>BanjirSering</th>
 									<th>Jarak Terdekat</th>
 									<th>Cluster</th>
 								</tr>
@@ -205,64 +205,64 @@ $tanaman = $_GET['tanaman'];
 									<tr>
 										<td>
 											<?php 
-											$hasil_c1 = 0;
+											$hasil_BanjirJarang = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent1 = $arr[$cen1][$b];
 												$kurang = $c-$nilai_cent1;
 												$pangkat = pow($kurang, 2);
-												$hasil_c1 += $pangkat;
+												$hasil_BanjirJarang += $pangkat;
 											}
-											$hasil = sqrt($hasil_c1);
+											$hasil = sqrt($hasil_BanjirJarang);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C1";
+											$arr_x['cluster'] = "BanjirJarang";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
-											// $arr_cluster[$id_kecamatan]['C1'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirJarang'] = $hasil;
 											?>
 										</td>
 										<td>
 											<?php 
-											$hasil_c2 = 0;
+											$hasil_BanjirSedang = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent2 = $arr[$cen2][$b];
 												$kurang = $c-$nilai_cent2;
 												$pangkat = pow($kurang, 2);
-												$hasil_c2 += $pangkat;
+												$hasil_BanjirSedang += $pangkat;
 											}
-											$hasil = sqrt($hasil_c2);
+											$hasil = sqrt($hasil_BanjirSedang);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C2";
+											$arr_x['cluster'] = "BanjirSedang";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 											
 
-											// $arr_cluster[$id_kecamatan]['C2'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSedang'] = $hasil;
 											?>
 										</td>
 										<td>
 											<?php 
-											$hasil_c3 = 0;
+											$hasil_BanjirSering = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent3 = $arr[$cen3][$b];
 												$kurang = $c-$nilai_cent3;
 												$pangkat = pow($kurang, 2);
-												$hasil_c3 += $pangkat;
+												$hasil_BanjirSering += $pangkat;
 											}
-											$hasil = sqrt($hasil_c3);
+											$hasil = sqrt($hasil_BanjirSering);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C3";
+											$arr_x['cluster'] = "BanjirSering";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
 
-											// $arr_cluster[$id_kecamatan]['C3'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSering'] = $hasil;
 											?>
 										</td>
 										<?php 
@@ -304,37 +304,37 @@ $tanaman = $_GET['tanaman'];
 						<?php 
 						$arr_centroid_selanjutnya = array();
 
-						$rata_c1 = 0;
-						$total_c1 = 0;
-						$jumlah_c1 = 0; 
-						$jumlah_c2 = 0; 
-						$jumlah_c3 = 0; 
+						$rata_BanjirJarang = 0;
+						$total_BanjirJarang = 0;
+						$jumlah_BanjirJarang = 0; 
+						$jumlah_BanjirSedang = 0; 
+						$jumlah_BanjirSering = 0; 
 
-						$arr_c1 = array();
-						$arr_c2 = array();
-						$arr_c3 = array();
+						$arr_BanjirJarang = array();
+						$arr_BanjirSedang = array();
+						$arr_BanjirSering = array();
 
-						$arr_c1_fix = array();
-						$arr_c2_fix = array();
-						$arr_c3_fix = array();
+						$arr_BanjirJarang_fix = array();
+						$arr_BanjirSedang_fix = array();
+						$arr_BanjirSering_fix = array();
 
 						for($a = 0; $a < count($arr_cluster); $a++){
 							$id_kecamatan = $arr_cluster[$a]['kecamatan'];
 							$cluster_terdekat = $arr_cluster[$a]['cluster_terdekat'];
 
 							for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
-								$arr_c1[$b] = 0;
-								$arr_c2[$b] = 0;
-								$arr_c3[$b] = 0;
+								$arr_BanjirJarang[$b] = 0;
+								$arr_BanjirSedang[$b] = 0;
+								$arr_BanjirSering[$b] = 0;
 							}
 
-							if($cluster_terdekat == "C1"){
-								$jumlah_c1++;
-							}else if($cluster_terdekat == "C2"){
-								$jumlah_c2++;
+							if($cluster_terdekat == "BanjirJarang"){
+								$jumlah_BanjirJarang++;
+							}else if($cluster_terdekat == "BanjirSedang"){
+								$jumlah_BanjirSedang++;
 
-							}else if($cluster_terdekat == "C3"){
-								$jumlah_c3++;
+							}else if($cluster_terdekat == "BanjirSering"){
+								$jumlah_BanjirSering++;
 
 							}
 							
@@ -347,13 +347,13 @@ $tanaman = $_GET['tanaman'];
 							$cluster_terdekat = $arr_cluster[$a]['cluster_terdekat'];
 
 							for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
-								if($cluster_terdekat == "C1"){
-									$arr_c1[$b] += $arr[$id_kecamatan][$b];
-								}else if($cluster_terdekat == "C2"){
-									$arr_c2[$b] += $arr[$id_kecamatan][$b];
+								if($cluster_terdekat == "BanjirJarang"){
+									$arr_BanjirJarang[$b] += $arr[$id_kecamatan][$b];
+								}else if($cluster_terdekat == "BanjirSedang"){
+									$arr_BanjirSedang[$b] += $arr[$id_kecamatan][$b];
 
-								}else if($cluster_terdekat == "C3"){
-									$arr_c3[$b] += $arr[$id_kecamatan][$b];
+								}else if($cluster_terdekat == "BanjirSering"){
+									$arr_BanjirSering[$b] += $arr[$id_kecamatan][$b];
 
 								}
 							}
@@ -365,13 +365,13 @@ $tanaman = $_GET['tanaman'];
 							$cluster_terdekat = $arr_cluster[$a]['cluster_terdekat'];
 
 							for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
-								if($cluster_terdekat == "C1"){
-									$arr_c1_fix[$b] =  $arr_c1[$b]/$jumlah_c1;
-								}else if($cluster_terdekat == "C2"){
-									$arr_c2_fix[$b] =  $arr_c2[$b]/$jumlah_c2;
+								if($cluster_terdekat == "BanjirJarang"){
+									$arr_BanjirJarang_fix[$b] =  $arr_BanjirJarang[$b]/$jumlah_BanjirJarang;
+								}else if($cluster_terdekat == "BanjirSedang"){
+									$arr_BanjirSedang_fix[$b] =  $arr_BanjirSedang[$b]/$jumlah_BanjirSedang;
 
-								}else if($cluster_terdekat == "C3"){
-									$arr_c3_fix[$b] =  $arr_c3[$b]/$jumlah_c3;
+								}else if($cluster_terdekat == "BanjirSering"){
+									$arr_BanjirSering_fix[$b] =  $arr_BanjirSering[$b]/$jumlah_BanjirSering;
 
 								}
 							}
@@ -379,9 +379,9 @@ $tanaman = $_GET['tanaman'];
 						}
 
 						$table_centroid = array();
-						array_push($table_centroid, $arr_c1_fix);
-						array_push($table_centroid, $arr_c2_fix);
-						array_push($table_centroid, $arr_c3_fix);
+						array_push($table_centroid, $arr_BanjirJarang_fix);
+						array_push($table_centroid, $arr_BanjirSedang_fix);
+						array_push($table_centroid, $arr_BanjirSering_fix);
 						?>
 
 
@@ -411,7 +411,7 @@ $tanaman = $_GET['tanaman'];
 										$id_a = $d['kecamatan_id'];
 										?>
 										<tr class="<?php if($cen1 == $id_a){ echo "bg-warning"; } ?> <?php if($cen2 == $id_a){ echo "bg-success"; } ?> <?php if($cen3 == $id_a){ echo "bg-info"; } ?>">
-											<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (C1)"; } ?> <?php if($cen2 == $id_a){ echo " (C2)"; } ?> <?php if($cen3 == $id_a){ echo "  (C3)"; } ?></td>
+											<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (BanjirJarang)"; } ?> <?php if($cen2 == $id_a){ echo " (BanjirSedang)"; } ?> <?php if($cen3 == $id_a){ echo "  (BanjirSering)"; } ?></td>
 											<?php 
 											for($b = 0; $b < count($table_centroid[$a]); $b++){ 
 												?>
@@ -436,9 +436,9 @@ $tanaman = $_GET['tanaman'];
 						<div class="table-responsive">
 							<table class="table table-bordered text-center" border="1">
 								<tr>
-									<th>C1</th>
-									<th>C2</th>
-									<th>C3</th>
+									<th>BanjirJarang</th>
+									<th>BanjirSedang</th>
+									<th>BanjirSering</th>
 									<th>Jarak Terdekat</th>
 									<th>Cluster</th>
 								</tr>
@@ -458,64 +458,64 @@ $tanaman = $_GET['tanaman'];
 									<tr>
 										<td>
 											<?php 
-											$hasil_c1 = 0;
+											$hasil_BanjirJarang = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent1 = $table_centroid[0][$b];
 												$kurang = $c-$nilai_cent1;
 												$pangkat = pow($kurang, 2);
-												$hasil_c1 += $pangkat;
+												$hasil_BanjirJarang += $pangkat;
 											}
-											$hasil = sqrt($hasil_c1);
+											$hasil = sqrt($hasil_BanjirJarang);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C1";
+											$arr_x['cluster'] = "BanjirJarang";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
-											// $arr_cluster[$id_kecamatan]['C1'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirJarang'] = $hasil;
 											?>
 										</td>
 										<td>
 											<?php 
-											$hasil_c2 = 0;
+											$hasil_BanjirSedang = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent2 = $table_centroid[1][$b];
 												$kurang = $c-$nilai_cent2;
 												$pangkat = pow($kurang, 2);
-												$hasil_c2 += $pangkat;
+												$hasil_BanjirSedang += $pangkat;
 											}
-											$hasil = sqrt($hasil_c2);
+											$hasil = sqrt($hasil_BanjirSedang);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C2";
+											$arr_x['cluster'] = "BanjirSedang";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 											
 
-											// $arr_cluster[$id_kecamatan]['C2'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSedang'] = $hasil;
 											?>
 										</td>
 										<td>
 											<?php 
-											$hasil_c3 = 0;
+											$hasil_BanjirSering = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent3 = $table_centroid[2][$b];
 												$kurang = $c-$nilai_cent3;
 												$pangkat = pow($kurang, 2);
-												$hasil_c3 += $pangkat;
+												$hasil_BanjirSering += $pangkat;
 											}
-											$hasil = sqrt($hasil_c3);
+											$hasil = sqrt($hasil_BanjirSering);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C3";
+											$arr_x['cluster'] = "BanjirSering";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
 
-											// $arr_cluster[$id_kecamatan]['C3'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSering'] = $hasil;
 											?>
 										</td>
 										<?php 
@@ -586,37 +586,37 @@ $tanaman = $_GET['tanaman'];
 							<?php 
 							$arr_centroid_selanjutnya = array();
 
-							$rata_c1 = 0;
-							$total_c1 = 0;
-							$jumlah_c1 = 0; 
-							$jumlah_c2 = 0; 
-							$jumlah_c3 = 0; 
+							$rata_BanjirJarang = 0;
+							$total_BanjirJarang = 0;
+							$jumlah_BanjirJarang = 0; 
+							$jumlah_BanjirSedang = 0; 
+							$jumlah_BanjirSering = 0; 
 
-							$arr_c1 = array();
-							$arr_c2 = array();
-							$arr_c3 = array();
+							$arr_BanjirJarang = array();
+							$arr_BanjirSedang = array();
+							$arr_BanjirSering = array();
 
-							$arr_c1_fix = array();
-							$arr_c2_fix = array();
-							$arr_c3_fix = array();
+							$arr_BanjirJarang_fix = array();
+							$arr_BanjirSedang_fix = array();
+							$arr_BanjirSering_fix = array();
 
 							for($a = 0; $a < count($arr_cluster); $a++){
 								$id_kecamatan = $arr_cluster[$a]['kecamatan'];
 								$cluster_terdekat = $arr_cluster[$a]['cluster_terdekat'];
 
 								for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
-									$arr_c1[$b] = 0;
-									$arr_c2[$b] = 0;
-									$arr_c3[$b] = 0;
+									$arr_BanjirJarang[$b] = 0;
+									$arr_BanjirSedang[$b] = 0;
+									$arr_BanjirSering[$b] = 0;
 								}
 
-								if($cluster_terdekat == "C1"){
-									$jumlah_c1++;
-								}else if($cluster_terdekat == "C2"){
-									$jumlah_c2++;
+								if($cluster_terdekat == "BanjirJarang"){
+									$jumlah_BanjirJarang++;
+								}else if($cluster_terdekat == "BanjirSedang"){
+									$jumlah_BanjirSedang++;
 
-								}else if($cluster_terdekat == "C3"){
-									$jumlah_c3++;
+								}else if($cluster_terdekat == "BanjirSering"){
+									$jumlah_BanjirSering++;
 
 								}
 
@@ -629,13 +629,13 @@ $tanaman = $_GET['tanaman'];
 								$cluster_terdekat = $arr_cluster[$a]['cluster_terdekat'];
 
 								for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
-									if($cluster_terdekat == "C1"){
-										$arr_c1[$b] += $arr[$id_kecamatan][$b];
-									}else if($cluster_terdekat == "C2"){
-										$arr_c2[$b] += $arr[$id_kecamatan][$b];
+									if($cluster_terdekat == "BanjirJarang"){
+										$arr_BanjirJarang[$b] += $arr[$id_kecamatan][$b];
+									}else if($cluster_terdekat == "BanjirSedang"){
+										$arr_BanjirSedang[$b] += $arr[$id_kecamatan][$b];
 
-									}else if($cluster_terdekat == "C3"){
-										$arr_c3[$b] += $arr[$id_kecamatan][$b];
+									}else if($cluster_terdekat == "BanjirSering"){
+										$arr_BanjirSering[$b] += $arr[$id_kecamatan][$b];
 
 									}
 								}
@@ -647,13 +647,13 @@ $tanaman = $_GET['tanaman'];
 								$cluster_terdekat = $arr_cluster[$a]['cluster_terdekat'];
 
 								for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
-									if($cluster_terdekat == "C1"){
-										$arr_c1_fix[$b] =  $arr_c1[$b]/$jumlah_c1;
-									}else if($cluster_terdekat == "C2"){
-										$arr_c2_fix[$b] =  $arr_c2[$b]/$jumlah_c2;
+									if($cluster_terdekat == "BanjirJarang"){
+										$arr_BanjirJarang_fix[$b] =  $arr_BanjirJarang[$b]/$jumlah_BanjirJarang;
+									}else if($cluster_terdekat == "BanjirSedang"){
+										$arr_BanjirSedang_fix[$b] =  $arr_BanjirSedang[$b]/$jumlah_BanjirSedang;
 
-									}else if($cluster_terdekat == "C3"){
-										$arr_c3_fix[$b] =  $arr_c3[$b]/$jumlah_c3;
+									}else if($cluster_terdekat == "BanjirSering"){
+										$arr_BanjirSering_fix[$b] =  $arr_BanjirSering[$b]/$jumlah_BanjirSering;
 
 									}
 								}
@@ -661,9 +661,9 @@ $tanaman = $_GET['tanaman'];
 							}
 
 							$table_centroid = array();
-							array_push($table_centroid, $arr_c1_fix);
-							array_push($table_centroid, $arr_c2_fix);
-							array_push($table_centroid, $arr_c3_fix);
+							array_push($table_centroid, $arr_BanjirJarang_fix);
+							array_push($table_centroid, $arr_BanjirSedang_fix);
+							array_push($table_centroid, $arr_BanjirSering_fix);
 							?>
 
 							<h4 class="text-center">Tabel centroid (Pusat Cluster) untuk iterasi <?php echo $iterasi_ke+1 ?></h4>
@@ -691,7 +691,7 @@ $tanaman = $_GET['tanaman'];
 											$id_a = $d['kecamatan_id'];
 											?>
 											<tr class="<?php if($cen1 == $id_a){ echo "bg-warning"; } ?> <?php if($cen2 == $id_a){ echo "bg-success"; } ?> <?php if($cen3 == $id_a){ echo "bg-info"; } ?>">
-												<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (C1)"; } ?> <?php if($cen2 == $id_a){ echo " (C2)"; } ?> <?php if($cen3 == $id_a){ echo "  (C3)"; } ?></td>
+												<td><?php echo $d['kecamatan_nama'] ?> <?php if($cen1 == $id_a){ echo " (BanjirJarang)"; } ?> <?php if($cen2 == $id_a){ echo " (BanjirSedang)"; } ?> <?php if($cen3 == $id_a){ echo "  (BanjirSering)"; } ?></td>
 												<?php 
 												for($b = 0; $b < count($table_centroid[$a]); $b++){ 
 													?>
@@ -716,9 +716,9 @@ $tanaman = $_GET['tanaman'];
 							<div class="table-responsive">
 								<table class="table table-bordered text-center" border="1">
 									<tr>
-										<th>C1</th>
-										<th>C2</th>
-										<th>C3</th>
+										<th>BanjirJarang</th>
+										<th>BanjirSedang</th>
+										<th>BanjirSering</th>
 										<th>Jarak Terdekat</th>
 										<th>Cluster</th>
 									</tr>
@@ -738,64 +738,64 @@ $tanaman = $_GET['tanaman'];
 										<tr>
 											<td>
 												<?php 
-												$hasil_c1 = 0;
+												$hasil_BanjirJarang = 0;
 												for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 													$c = $arr[$id_kecamatan][$b];
 													$nilai_cent1 = $table_centroid[0][$b];
 													$kurang = $c-$nilai_cent1;
 													$pangkat = pow($kurang, 2);
-													$hasil_c1 += $pangkat;
+													$hasil_BanjirJarang += $pangkat;
 												}
-												$hasil = sqrt($hasil_c1);
+												$hasil = sqrt($hasil_BanjirJarang);
 												echo $hasil;
 
-												$arr_x['cluster'] = "C1";
+												$arr_x['cluster'] = "BanjirJarang";
 												$arr_x['nilai'] = $hasil;
 												array_push($arr_jarak,$arr_x);
 
-											// $arr_cluster[$id_kecamatan]['C1'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirJarang'] = $hasil;
 												?>
 											</td>
 											<td>
 												<?php 
-												$hasil_c2 = 0;
+												$hasil_BanjirSedang = 0;
 												for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 													$c = $arr[$id_kecamatan][$b];
 													$nilai_cent2 = $table_centroid[1][$b];
 													$kurang = $c-$nilai_cent2;
 													$pangkat = pow($kurang, 2);
-													$hasil_c2 += $pangkat;
+													$hasil_BanjirSedang += $pangkat;
 												}
-												$hasil = sqrt($hasil_c2);
+												$hasil = sqrt($hasil_BanjirSedang);
 												echo $hasil;
 
-												$arr_x['cluster'] = "C2";
+												$arr_x['cluster'] = "BanjirSedang";
 												$arr_x['nilai'] = $hasil;
 												array_push($arr_jarak,$arr_x);
 
 
-											// $arr_cluster[$id_kecamatan]['C2'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSedang'] = $hasil;
 												?>
 											</td>
 											<td>
 												<?php 
-												$hasil_c3 = 0;
+												$hasil_BanjirSering = 0;
 												for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 													$c = $arr[$id_kecamatan][$b];
 													$nilai_cent3 = $table_centroid[2][$b];
 													$kurang = $c-$nilai_cent3;
 													$pangkat = pow($kurang, 2);
-													$hasil_c3 += $pangkat;
+													$hasil_BanjirSering += $pangkat;
 												}
-												$hasil = sqrt($hasil_c3);
+												$hasil = sqrt($hasil_BanjirSering);
 												echo $hasil;
 
-												$arr_x['cluster'] = "C3";
+												$arr_x['cluster'] = "BanjirSering";
 												$arr_x['nilai'] = $hasil;
 												array_push($arr_jarak,$arr_x);
 
 
-											// $arr_cluster[$id_kecamatan]['C3'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSering'] = $hasil;
 												?>
 											</td>
 											<?php 
@@ -870,9 +870,9 @@ $tanaman = $_GET['tanaman'];
 							<table class="table table-bordered text-center" border="1">
 								<tr>
 									<th>KECAMATAN</th>
-									<th>C1</th>
-									<th>C2</th>
-									<th>C3</th>
+									<th>BanjirJarang</th>
+									<th>BanjirSedang</th>
+									<th>BanjirSering</th>
 									<th>Jarak Terdekat</th>
 									<th>Cluster</th>
 								</tr>
@@ -891,64 +891,64 @@ $tanaman = $_GET['tanaman'];
 										<td><?php echo $kec['kecamatan_nama'] ?></td>
 										<td>
 											<?php 
-											$hasil_c1 = 0;
+											$hasil_BanjirJarang = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent1 = $table_centroid[0][$b];
 												$kurang = $c-$nilai_cent1;
 												$pangkat = pow($kurang, 2);
-												$hasil_c1 += $pangkat;
+												$hasil_BanjirJarang += $pangkat;
 											}
-											$hasil = sqrt($hasil_c1);
+											$hasil = sqrt($hasil_BanjirJarang);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C1";
+											$arr_x['cluster'] = "Banjir Jarang";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
-											// $arr_cluster[$id_kecamatan]['C1'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirJarang'] = $hasil;
 											?>
 										</td>
 										<td>
 											<?php 
-											$hasil_c2 = 0;
+											$hasil_BanjirSedang = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent2 = $table_centroid[1][$b];
 												$kurang = $c-$nilai_cent2;
 												$pangkat = pow($kurang, 2);
-												$hasil_c2 += $pangkat;
+												$hasil_BanjirSedang += $pangkat;
 											}
-											$hasil = sqrt($hasil_c2);
+											$hasil = sqrt($hasil_BanjirSedang);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C2";
+											$arr_x['cluster'] = "Banjir Sedang";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
 
-											// $arr_cluster[$id_kecamatan]['C2'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSedang'] = $hasil;
 											?>
 										</td>
 										<td>
 											<?php 
-											$hasil_c3 = 0;
+											$hasil_BanjirSering = 0;
 											for($b = 0; $b < count($arr[$id_kecamatan]); $b++){
 												$c = $arr[$id_kecamatan][$b];
 												$nilai_cent3 = $table_centroid[2][$b];
 												$kurang = $c-$nilai_cent3;
 												$pangkat = pow($kurang, 2);
-												$hasil_c3 += $pangkat;
+												$hasil_BanjirSering += $pangkat;
 											}
-											$hasil = sqrt($hasil_c3);
+											$hasil = sqrt($hasil_BanjirSering);
 											echo $hasil;
 
-											$arr_x['cluster'] = "C3";
+											$arr_x['cluster'] = "Banjir Sering";
 											$arr_x['nilai'] = $hasil;
 											array_push($arr_jarak,$arr_x);
 
 
-											// $arr_cluster[$id_kecamatan]['C3'] = $hasil;
+											// $arr_cluster[$id_kecamatan]['BanjirSering'] = $hasil;
 											?>
 										</td>
 										<?php 
@@ -1028,8 +1028,8 @@ $tanaman = $_GET['tanaman'];
 
 	</div>
 </div>
-<div class="hasil" style="padding-bottom:3%; padding-left:30px;padding-right:30px ;padding-top:2rem;">
-<h4 class="text-center">HASIL AKHIR (DIURUTKAN)</h4>
+<div class="hasil pt-5 mt-5" style="padding-bottom:3%; padding-left:30px;padding-right:30px ;padding-top:2rem;">
+<h4 class="text-center">HASIL CLUSTER</h4>
 						<div class="table-responsive">
 							<table class="table table-bordered text-center" border="1">
 								<tr>
